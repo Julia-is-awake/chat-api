@@ -7,9 +7,7 @@ const app = require("../src/api");
 
 const port = process.env.API_PORT || 5000;
 
-var cors = require("cors");
 
-app.use(cors());
 
 app.listen(port);
 

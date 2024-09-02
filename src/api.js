@@ -9,7 +9,9 @@ app.use(express.json());
 
 const router = express.Router();
 
+var cors = require("cors");
 
+app.use(cors());
 
 app.use(
   "/",
