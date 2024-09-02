@@ -79,7 +79,7 @@ app.use(
       !token.checktoken(req.headers.token, req.headers.iduser, req.headers.nick)
     )
       return false;
-    let resp = await salaController.sair(req.query.idSala, req.headers.iduser);
+    let resp = await salaController.sair(req.headers.iduser);
     res.status(200).send(resp);
   })
 );
