@@ -11,7 +11,11 @@ const router = express.Router();
 
 var cors = require("cors");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173/template-chat",
+  })
+);
 
 router.get("/", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
